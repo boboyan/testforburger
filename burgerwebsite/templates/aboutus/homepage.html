@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Speed Burger.Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/homepage.css">
+
+
+</head>
+<body>
+{% if user.is_authenticated %}
+<h2 class="top-menu">Hello {{ user.username }},</h2>
+ {% else %}
+        <p>Please choose from options below.</p>
+    {% endif %}
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href=" " class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/aboutus" class="w3-button w3-block w3-black">ABOUT US</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/products" class="w3-button w3-block w3-black">OUR MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/shop" class="w3-button w3-block w3-black">SHOP</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/contactus" class="w3-button w3-block w3-black">CONTACT US</a>
+    </div>
+    <div>
+        <a href="/signup" class="w3-button w3-block w3-black">Signup</a>
+    </div>
+
+
+  </div>
+</div>
+
+
+</body>
+</html>

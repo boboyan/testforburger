@@ -1,0 +1,53 @@
+/* About Us CSS*/
+
+.about_our_food {
+    padding: 20px;
+    font-family: Monospace;
+    text-align: center;
+    background-color: floralwhite;
+    color: black;
+}
+.about-section {
+    padding: 10px;
+    left:80px;
+    font-family: Monospace;
+    background-color: floralwhite;
+    color: black;
+ }
+
+.page-footer {
+    padding: 100px;
+    font-family: Monospace;
+    background-color: floralwhite;
+    color: black;
+
+}
+
+.container {
+    font-family: Monospace;
+    text-align: center;
+}
+
+.contact_us {
+    padding: 100px;
+    font-family: Monospace;
+    text-align: center;
+
+}
+
+.contact-section {
+    padding: 25px;
+    font-family: Monospace;
+
+}
+
+
+.contact_body {
+    background: url(../images/contact-bg.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: black;
+}
+

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <style>
+
+        .text-light-grey {
+
+            color: #a9b5be;
+
+        }
+
+        .border-light-grey {
+
+            border-color: #a9b5be;
+
+        }
+
+        dd {
+
+            text-align: right;
+
+        }
+
+        .sub-title {
+
+            font-size: 1.5em;
+
+        }
+
+        .item-name, .item-price {
+
+            font-size: 1.3em;
+
+        }
+
+        .item-desc {
+
+            font-size: 1.1em;
+
+        }
+
+        .font-bold {
+
+            font-weight: bold;
+
+        }
+
+        .item-image > img {
+
+            width: 100px;
+
+            height: 100px;
+
+        }
+
+        .price-list dt, .price-list dd {
+
+            font-weight: normal;
+
+            margin: 0.2em 0;
+
+            display: inline-block;
+
+            width: 45%;
+
+        }
+
+        .total-price dt, .total-price dd {
+
+            font-weight: normal;
+
+            font-size: 1.2em;
+
+            margin: 0.2em 0;
+
+            display: inline-block;
+
+            width: 45%;
+
+        }
+
+        .item-count > input {
+
+            margin-top: 3.5em;
+
+        }
+
+        input[type=number] + span {
+
+            position: absolute;
+
+            top: 4em;
+
+            right: 53px;
+
+        }
+
+        .btn-long {
+
+            width: 10em;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row bg-light px-4 py-5">
+
+            <div class="col-4 px-2 py-3 my-6 text-center text-dark border-bottom border-dark sub-title font-bold">1. Shoppint Cart</div>
+
+            <div class="col-4 px-2 py-3 my-6 text-center text-light-grey border-bottom border-light-grey sub-title">2. Shipping Details</div>
+
+            <div class="col-4 px-2 py-3 my-6 text-center text-light-grey border-bottom border-light-grey sub-title">3. Payment Options</div>
+
+        </div>
+
+        <div class="row mt-3 mb-2">
+
+            <div class="col-8">
+
+                <div class="sub-title border-bottom border-dark">Shoppint Cart</div>
+
+                <div id="item-list border-bottom border-dark">
+
+                        <div class="item p-1 row">
+
+                            <div class="item-image col-2">
+
+                                <img src="" alt="">
+
+                            </div>
+
+                            <div class="item-name-column col-8">
+
+                                <div class="item-name">MEAT LOVER-FOUR CHEESE</div>
+
+                                <div class="item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+
+                                <div class="item-price">$6.5</div>
+
+                            </div>
+
+                            <div class="item-count col-2">
+
+                                <input type="number" class="form-control" value="1">
+
+                                <span>pcs</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="item p-1 row">
+
+                            <div class="item-image col-2">
+
+                                <img src="" alt="">
+
+                            </div>
+
+                            <div class="item-name-column col-8">
+
+                                <div class="item-name">VAGAN-AMAZING TOFU</div>
+
+                                <div class="item-desc">Aliquam nulla facilisi cras fermentum odio eu</div>
+
+                                <div class="item-price">$5.5</div>
+
+                            </div>
+
+                            <div class="item-count col-2">
+
+                                <input type="number" class="form-control" value="1">
+
+                                <span>pcs</span>
+
+                            </div>
+
+                        </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-4">
+
+                <div class="sub-title border-bottom border-dark">Summary</div>
+
+                <div class="m-1"><a href="#" class="font-bold" style="color: rgb(61, 61, 61);">ENTER COUPON CODE</a></div>
+
+                <div class="price-list border-top border-bottom border-dark">
+
+                    <dl>
+
+                        <dt>SUBTOTAL</dt>
+
+                        <dd>$12</dd>
+
+                        <dt>SHIPPING</dt>
+
+                        <dd>$2.5</dd>
+
+                        <dt>TAXES</dt>
+
+                        <dd>$1</dd>
+
+                    </dl>
+
+                </div>
+
+                <div class="total-price m-1">
+
+                    <dl>
+
+                        <dt>TOTAL</dt>
+
+                        <dd>$15.5</dd>
+
+                    </dl>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <button class="btn btn-secondary btn-long mr-1">Next</button>
+
+            <button class="btn btn-light btn-long">Cancel</button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
